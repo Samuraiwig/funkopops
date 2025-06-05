@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funko</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">Funko</h1>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="menu" id="menu">
+      <a href="#section1">Home</a>
+      <a href="#section2">Over</a>
+      <a href="#section3">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1" class="scroll-section section1">
+        <div class="funko-info">
+          <h2>Informatie over de oudste en nieuwste Funko Pop</h2>
+          <div class="funko-cards">
+            <div class="funko-card">
+              <img src="eerste.jpg" alt="Oudste Funko Pop">
+              <h3>Oudste Funko Pop</h3>
+              <p>De allereerste Funko Pop werd uitgebracht in 1998, en was een Bobblehead van Big Boy – het mascottefiguur van een Amerikaanse dinerketen.</p>
+            </div>
+            <div class="funko-card">
+              <img src="spiderman.jpg" alt="Nieuwste Funko Pop">
+              <h3>Nieuwste Funko Pop</h3>
+              <p>De nieuwste Funko Pops zijn vaak gelinkt aan recente films of series. Deze Spider-Man (2024 versie) is een van de laatste releases in de Marvel-lijn.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section2" class="scroll-section section2">
+        <div class="about-content">
+          <h2>Hoe zijn Funko Pops ontstaan?</h2>
+          <p>
+            Funko werd in 1998 opgericht door Mike Becker in Washington, VS. Het begon allemaal met de creatie van een bobblehead van "Big Boy", een mascotte van een Amerikaanse dinerketen. 
+            Becker wilde nostalgisch speelgoed creëren dat betaalbaar was en iconische figuren uit de popcultuur vertegenwoordigde.
+          </p>
+          <p>
+            In 2005 verkocht Becker het bedrijf aan Brian Mariotti, die Funko uitbreidde tot een wereldwijd fenomeen. In 2010 introduceerde Funko de eerste "Pop! Vinyl"-figuren: herkenbaar aan hun grote hoofden, zwarte ogen en minimalistische stijl.
+          </p>
+          <p>
+            Tegenwoordig produceert Funko duizenden verschillende Pop!-figuren van franchises zoals Marvel, Star Wars, Harry Potter, Disney, anime, muzieksterren en nog veel meer.
+          </p>
+        </div>
+      </section>
+      
+    <section id="section3" class="scroll-section section3">Contacteer ons</section>
+  </main>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
