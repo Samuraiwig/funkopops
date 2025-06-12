@@ -191,4 +191,49 @@
     line-height: 1.6;
     margin-bottom: 1rem;
   }
-    
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffffcc;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    color: #5a2e0e;
+    text-align: center;
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #d9bda4;
+    border-radius: 10px;
+    background: #fff9f5;
+  }
+  
+  .contact-form button {
+    background-color: #a05a2c;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #874924;
+  }
+  
