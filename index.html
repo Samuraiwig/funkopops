@@ -50,6 +50,34 @@
           </div>
         </div>
       </section>
+      <section id="section4" class="scroll-section section4">
+        <div class="catalogue">
+          <h2>Populaire Funko Pops</h2>
+          <div class="funko-grid">
+            <div class="funko-item">
+              <img src="https://www.funko.com/cdn/shop/products/72288_POPSuperSaiyanGokuGlow_GLAM-WEB.png" alt="Goku">
+              <h3>Super Saiyan Goku</h3>
+              <p>Categorie: Anime</p>
+              <p>€14,99</p>
+              <button class="like-btn">❤️ Like</button>
+            </div>
+            <div class="funko-item">
+              <img src="https://www.funko.com/cdn/shop/products/67694_POPMovies_SpiderMan_NoWayHome_FriendlyNeighborhood_Glow_GLAM-WEB.png" alt="Spider-Man">
+              <h3>Spider-Man (No Way Home)</h3>
+              <p>Categorie: Marvel</p>
+              <p>€16,99</p>
+              <button class="like-btn">❤️ Like</button>
+            </div>
+            <div class="funko-item">
+              <img src="https://www.funko.com/cdn/shop/files/67579_POPAnimation_OnePiece_Zoro_HotTopic_GLAM-WEB.png" alt="Zoro">
+              <h3>Roronoa Zoro</h3>
+              <p>Categorie: Anime</p>
+              <p>€15,49</p>
+              <button class="like-btn">❤️ Like</button>
+            </div>
+          </div>
+        </div>
+      </section>
       
       <section id="section3" class="scroll-section section3">
         <div class="contact-form">
@@ -72,5 +100,16 @@
       menu.classList.toggle("active");
     });
   </script>
+  <script>
+    const likeButtons = document.querySelectorAll(".like-btn");
+  
+    likeButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("liked");
+        btn.textContent = btn.classList.contains("liked") ? "💖 Geliked" : "❤️ Like";
+      });
+    });
+  </script>
+  
 </body>
 </html>
