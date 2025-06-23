@@ -374,3 +374,99 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Responsive layout verbeteringen */
+
+/* Menu horizontaal vanaf tablet */
+@media (min-width: 768px) {
+  .menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    box-shadow: none;
+    gap: 2rem;
+  }
+
+  .menu a {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Layout en tekst kleiner op mobiel */
+@media (max-width: 767px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .scroll-section {
+    font-size: 1.5rem;
+    padding: 100px 20px 40px;
+  }
+
+  .funko-cards,
+  .funko-grid {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .funko-card,
+  .funko-item {
+    max-width: 100%;
+  }
+
+  .about-content,
+  .catalogue,
+  .contact-form,
+  .funko-info {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-content h2,
+  .catalogue h2,
+  .funko-info h2,
+  .contact-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .funko-card h3,
+  .funko-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .funko-card p,
+  .funko-item p,
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .like-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Algemeen responsieve content fix */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.scroll-section,
+.about-content,
+.contact-form,
+.catalogue {
+  width: 100%;
+  box-sizing: border-box;
+}
